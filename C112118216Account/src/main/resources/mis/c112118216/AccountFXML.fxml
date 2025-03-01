@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="mis.c112118216.AccountFXMLController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="424.0" prefWidth="320.0">
+         <children>
+            <Button fx:id="btnCredit" layoutX="28.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleCredit" text="存款">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDebit" layoutX="90.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleDebit" text="提款">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBalance" layoutX="151.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleBalance" text="餘額查詢">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="amountField" layoutX="28.0" layoutY="58.0" prefHeight="42.0" prefWidth="262.0" />
+            <TextArea fx:id="displayArea" editable="false" layoutX="28.0" layoutY="160.0" prefHeight="230.0" prefWidth="262.0" />
+            <Label layoutX="28.0" layoutY="24.0" text="輸入金額">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="242.0" layoutY="113.0" mnemonicParsing="false" onAction="#clear" text="清除">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
